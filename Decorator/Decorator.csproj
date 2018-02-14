@@ -42,8 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Component\Component.cs" />
+    <Compile Include="ConcreteDecorators\Archer.cs" />
+    <Compile Include="ConcreteComponent\Human.cs" />
+    <Compile Include="ConcreteDecorators\HumanWarrior.cs" />
+    <Compile Include="Decorator\Decorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ConcreteDecorators\Rider.cs" />
+    <Compile Include="ConcreteDecorators\Swordbeard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
