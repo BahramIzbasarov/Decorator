@@ -8,6 +8,10 @@ namespace Decorator
 {
     class Swordbeard : Decorator
     {
-
+        public Swordbeard(HumanWarrior humanWarrior)
+        {
+            Attack = 40 + humanWarrior.Attack;
+            Console.WriteLine(Attack);
+        }
     }
 }

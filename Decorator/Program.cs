@@ -10,6 +10,13 @@ namespace Decorator
     {
         static void Main(string[] args)
         {
+            Human h = new Human();
+            HumanWarrior hw = new HumanWarrior(h);
+            Swordbeard sb = new Swordbeard(hw);
+            HumanWarrior hw2 = new HumanWarrior(h);
+            Swordbeard sb2 = new Swordbeard(hw2);
+
+            h.Operation();
         }
     }
 }

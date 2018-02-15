@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    class Decorator : Human
+    abstract class Decorator : Component
     {
+        public override Component Operation(Component comp)
+        {
+            Attack += comp.Operation(c);
+            return comp;
+        }
     }
 }
