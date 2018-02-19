@@ -13,7 +13,7 @@ namespace Decorator
         private int hp;
         private int defence;
 
-        public abstract Component Operation(Component comp);
+        public abstract void Operation(Component comp);
 
         public int Attack
         {

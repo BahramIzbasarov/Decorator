@@ -11,10 +11,10 @@ namespace Decorator
     {
         public HumanWarrior(Human human)
         {
-            Attack = 20;
-            Speed = 10;
-            Hp = 50;
-            Defence = 20;
+            Attack = 20 + human.Attack;
+            Speed = 10 + human.Speed;
+            Hp = 50 + human.Hp;
+            Defence = 20 + human.Defence;
         }
 
 

@@ -15,10 +15,8 @@ namespace Decorator
             Speed = 20;
             Hp = 150;
             Defence = 0;
-            
         }
 
-        
 
         public override void Operation(Component comp)
         {

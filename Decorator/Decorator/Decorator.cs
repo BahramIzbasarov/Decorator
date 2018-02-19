@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    abstract class Decorator : Component
+    class Decorator : Component
     {
-        public override Component Operation(Component comp)
+        public override void Operation(Component comp)
         {
-            Attack += comp.Operation(c);
-            return comp;
+            throw new NotImplementedException();
         }
     }
 }

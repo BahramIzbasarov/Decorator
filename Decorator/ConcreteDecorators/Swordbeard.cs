@@ -11,7 +11,9 @@ namespace Decorator
         public Swordbeard(HumanWarrior humanWarrior)
         {
             Attack = 40 + humanWarrior.Attack;
-            Console.WriteLine(Attack);
+            Defence = 40 + humanWarrior.Defence;
+            Speed = humanWarrior.Speed - 10;
+            Hp = 50 + humanWarrior.Hp;
         }
     }
 }
